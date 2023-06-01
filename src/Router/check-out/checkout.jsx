@@ -10,7 +10,7 @@ const CheckOut = () => {
   const cartItems = useSelector(selectCartItmes);
   const cartTotal = useSelector(selectCartTotal);
 
-  return (
+return (
     <div className="checkout-container">
       <div className="checkout-header">
         <div className="header-block ">
