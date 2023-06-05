@@ -1,3 +1,4 @@
+import { CART_ACTION_TYPE } from "../cart/cart-type";
 import { USER_ACTION_TYPE } from "./user-type";
 const INITIAL_STATE = {
   currentUser: null,
