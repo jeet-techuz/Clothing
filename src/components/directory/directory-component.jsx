@@ -1,5 +1,5 @@
 import DictoryItems from "../dictory-items/directory-items";
-import "./directory.scss";
+import { DirectoryContainer } from "./directory-style";
 const Directory = () => {
   const catagories = [
     {
@@ -35,11 +35,11 @@ const Directory = () => {
   ];
 
   return (
-    <div className="directory-container">
+    <DirectoryContainer>
       {catagories.map((category) => (
         <DictoryItems key={category.id} category={category} />
       ))}
-    </div>
+    </DirectoryContainer>
   );
 };
 export default Directory;

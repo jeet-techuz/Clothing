@@ -9,7 +9,7 @@ import {
 
 import ProductCard from "../../components/product-items/product-card";
 
-import "./category.scss";
+import { CategoryContainer, Title } from "./category-style";
 import Spinner from "../../components/spinner/spinner";
 
 const Category = () => {
@@ -24,16 +24,16 @@ const Category = () => {
 
   return (
     <Fragment>
-      <h2 className="category-title">{category.toUpperCase()}</h2>
+      <Title>{category.toUpperCase()}</Title>
       {isLoading ? (
         <Spinner />
       ) : (
-        <div className="category-container">
+        <CategoryContainer>
           {products &&
             products.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
-        </div>
+        </CategoryContainer>
       )}
     </Fragment>
   );
